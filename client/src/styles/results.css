@@ -1,0 +1,214 @@
+/* Results & Review Styles */
+.results-card {
+  max-width: 680px;
+  margin: 3rem auto;
+  background-color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 2.5rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.results-badge-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.results-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.results-icon.success {
+  background-color: var(--success-bg);
+  color: var(--success);
+}
+
+.results-icon.warning {
+  background-color: var(--warning-bg);
+  color: var(--warning);
+}
+
+.results-card h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.results-feedback-msg {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Big Score Circle */
+.score-circle-display {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--primary-light) 0%, #FFFFFF 100%);
+  border: 4px solid var(--primary);
+  margin-bottom: 2.5rem;
+}
+
+.score-main-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.score-percentage {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+/* Result Stats Bar */
+.results-stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  background-color: var(--background);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.res-stat-item h4 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+
+.res-stat-item p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.results-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Review Page */
+.review-header {
+  margin: 2.5rem 0 2rem;
+}
+
+.review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.review-item-card {
+  background-color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  border: 1.5px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.review-item-card.correct {
+  border-left: 6px solid var(--success);
+}
+
+.review-item-card.incorrect {
+  border-left: 6px solid var(--error);
+}
+
+.review-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.review-question-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.review-options-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.review-option {
+  padding: 0.85rem 1.2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-option.user-correct {
+  background-color: var(--success-bg);
+  border-color: var(--success);
+  color: #15803D;
+  font-weight: 600;
+}
+
+.review-option.user-wrong {
+  background-color: var(--error-bg);
+  border-color: var(--error);
+  color: #B91C1C;
+  font-weight: 600;
+}
+
+.review-option.actual-correct {
+  background-color: var(--success-bg);
+  border-color: var(--success);
+  color: #15803D;
+  font-weight: 600;
+}
+
+.review-explanation {
+  background-color: #F1F5F9;
+  border-left: 4px solid var(--secondary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+}
+
+.review-explanation strong {
+  color: var(--text-main);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 600px) {
+  .results-card {
+    padding: 2rem 1.5rem;
+  }
+  .results-stats-row {
+    grid-template-columns: 1fr;
+  }
+  .results-actions {
+    flex-direction: column;
+  }
+  .results-actions .btn {
+    width: 100%;
+  }
+}

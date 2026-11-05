@@ -1,0 +1,93 @@
+/* Profile & History Styles */
+.profile-header {
+  margin: 2.5rem 0 2rem;
+}
+
+.profile-card {
+  background-color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.profile-info h2 {
+  font-size: 1.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.profile-info p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-joined {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  background-color: var(--background);
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-full);
+}
+
+/* History Table Container */
+.history-table-container {
+  background-color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.history-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 2px solid var(--border);
+}
+
+.history-table td {
+  padding: 1.1rem 1rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+.history-table tr:hover td {
+  background-color: var(--secondary-light);
+}
+
+@media (max-width: 600px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.75rem;
+  }
+}
