@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "description": "QuizCraft - Educational Quiz Platform",
-  "scripts": {
+  "scripts": {    "scripts": {
+     "start": "node server.js"
+   }
     "setup": "npm run setup:server && npm run setup:client",
     "setup:server": "cd server && npm install && npm run seed",
     "setup:client": "cd client && npm install",
