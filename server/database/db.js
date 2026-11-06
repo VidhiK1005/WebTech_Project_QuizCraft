@@ -2,7 +2,8 @@ const path = require('path');
 const fs = require('fs');
 const { DatabaseSync } = require('node:sqlite');
 
-const dbPath = path.resolve(__dirname, 'quizcraft.db');
+// Use DB_PATH env var (set to /tmp/quizcraft.db on Vercel) or default local path
+const dbPath = process.env.DB_PATH || path.resolve(__dirname, 'quizcraft.db');
 
 // Ensure database file directory exists
 const dbDir = path.dirname(dbPath);
